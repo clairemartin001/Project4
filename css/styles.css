@@ -13,8 +13,8 @@ body{
 
 
 h1{ font-family: presley-slab; font-size: 55px; font-weight: 700;}
-h2{ font-family: amador; font-size: 200px;}
-h3{ font-family: amador; font-size: 150px;}
+h2{ font-family: presley-slab; font-size: 150px; font-weight: 700}
+h3{ font-family: presley-slab; font-size: 100px; font-weight: 700}
 p{ font-family: Roboto Slab; font-size: 17px; line-height: 20px; font-weight: 400;
 font-weight: bold;}
 
@@ -217,25 +217,6 @@ rotate: -20deg;
 }
 
 
-
-/* #printbutton{ 
-  position: absolute;
-  
-}
-
-
-#printthis{ 
-  scale: .3;
-  position: absolute;
-  bottom: 0px;
-}
-
-#printthis2{ 
-  transform: scale(.3);
-  position: absolute;
-  top: 10%;
-
-} */
 
 .printingcontainer:hover{ 
   cursor: pointer;
@@ -595,17 +576,19 @@ padding: 25px;
   .printing-text{ 
     opacity: 100%;
     position: absolute;
-    top: 80%;
-    padding-left: 20px;
+    top: 84%;
+    padding-left: 25px;
+    color: teal;
 
   }
   
   .printing-subtext{
       opacity: 100%;
       position: absolute;
-      top: 90%;
+      top: 93%;
       right: 0px;
       padding-right: 20px;
+      color: teal;
  
   }
 
