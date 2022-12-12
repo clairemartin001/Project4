@@ -13,8 +13,8 @@ body{
 
 
 h1{ font-family: presley-slab; font-size: 55px; font-weight: 700;}
-h2{ font-family: presley-slab; font-size: 150px; font-weight: 700}
-h3{ font-family: presley-slab; font-size: 100px; font-weight: 700}
+h2{ font-family: presley-slab; font-size: 150px; font-weight: 700;}
+h3{ font-family: presley-slab; font-size: 100px; font-weight: 700;}
 p{ font-family: Roboto Slab; font-size: 17px; line-height: 20px; font-weight: 400;
 font-weight: bold;}
 
@@ -579,6 +579,8 @@ padding: 25px;
     top: 84%;
     padding-left: 25px;
     color: teal;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
 
   }
   
@@ -589,7 +591,8 @@ padding: 25px;
       right: 0px;
       padding-right: 20px;
       color: teal;
- 
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: white;
   }
 
 
