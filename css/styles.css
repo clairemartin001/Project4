@@ -337,7 +337,7 @@ padding: 25px;
   }
 
   h1{ font-family: amador; font-size: 60px;}
-  p{ font-family: Inknut Antiqua; font-size: 15px; line-height: 20px;}
+  p{ font-family: Inknut Antiqua; font-size: 15px; line-height: 19px;}
 
   .text-container{ 
     width: 80%;
@@ -354,7 +354,7 @@ padding: 25px;
   }
 
   .printingcontainer{
-    top: -5%;
+    top: 50%;
   }
 
 }
