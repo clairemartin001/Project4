@@ -1,0 +1,622 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@500&display=swap');
+
+
+
+body{ 
+  width: 100%;
+  height: 100%;
+  background-color: teal;
+
+  
+}
+
+
+
+h1{ font-family: amador; font-size: 80px;}
+h2{ font-family: amador; font-size: 200px;}
+h3{ font-family: amador; font-size: 150px;}
+p{ font-family: Inknut Antiqua; font-size: 16px; line-height: 21px;}
+
+.container{ 
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 900px;
+}
+
+
+.image1 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  transform: scale(.2); rotate: 7deg;
+}
+
+.image2 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  transform: scale(.2);rotate: 20deg;
+}
+
+.image3 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  transform: scale(.2);
+}
+
+.image4 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  transform: scale(.2);
+  
+}
+
+.image5 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 30%;
+  left: -8%;
+  transform: scale(.2); rotate: -7deg; 
+}
+
+.image6 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -15%;
+  left: 30%;
+  transform: scale(.2);rotate: 3deg;
+}
+
+.image7 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: scale(.3);
+}
+
+.image8 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: scale(.3);
+}
+
+.image9 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  transform: scale(.3);
+}
+
+.image10 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 65%;
+  left: -10%;
+  transform: scale(.4); rotate: -10deg;
+}
+
+.image11 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: scale(.2); rotate: -7deg;
+}
+
+.image12 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 80%;
+  left: 55%;
+  transform: scale(.3);
+}
+
+.image13 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -14%;
+  left: 45%;
+  transform: scale(.5);
+}
+
+.image14 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: scale(.5); rotate: 7deg;
+}
+
+.image15 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  transform: scale(.3); rotate: -27deg;
+}
+
+.image16 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  transform: scale(.55); rotate: -27deg;
+}
+
+.image17 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top:5%;
+  left: 15%;
+  transform: scale(.3); rotate: -27deg;
+}
+
+.image18 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top:-5%;
+  left: 65%;
+  transform: scale(.3);rotate: 6deg;
+}
+
+
+
+.printingcontainer{ 
+position: absolute;
+transform: scale(.35);
+rotate: 20deg;
+top: 23%;
+left: 67%;
+}
+
+.printingcontainer2{ 
+  position: absolute;
+  top: 20%;
+  left: 0%;
+transform: scale(.35);
+
+}
+
+.printingcontainer3{ 
+  position: absolute;
+  top: 95%;
+  left: 10%;
+transform: scale(.35);
+rotate: -20deg;
+
+}
+
+
+
+/* #printbutton{ 
+  position: absolute;
+  
+}
+
+
+#printthis{ 
+  scale: .3;
+  position: absolute;
+  bottom: 0px;
+}
+
+#printthis2{ 
+  transform: scale(.3);
+  position: absolute;
+  top: 10%;
+
+} */
+
+.printingcontainer:hover{ 
+  cursor: pointer;
+
+}
+
+.printingcontainer2:hover{ 
+  cursor: pointer;
+
+}
+
+.printingcontainer3:hover{ 
+  cursor: pointer;
+
+}
+
+.printing-text{ 
+  opacity: 0%;
+}
+
+.printing-subtext{
+    opacity: 0%;
+}
+
+
+
+
+
+
+
+ 
+
+:root {
+  cursor: none;
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+}
+
+
+ :root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 10vmax at var(--cursorX) var(--cursorY),
+    rgba(0,0,0,0) 0%,
+    rgba(185, 185, 191, 0.2) 55%,
+    rgba(0, 0, 0, 0.95) 80%
+
+  )
+}
+
+
+.text-container{
+  color: white;
+  width: 50%;
+  z-index: 500;
+position: fixed;
+top: 25px;
+padding: 20px;
+}
+
+.subtext-container{
+  width: 30%;
+  position: fixed;
+  right: 0px;
+  color: white;
+  z-index: 500;
+top: 25px;
+padding: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SMALLER SCREEN */
+
+@media only screen and (max-width: 768px){
+  
+  
+  
+
+  img{ 
+    transform: scale(.7);
+  }
+
+  h1{ font-family: amador; font-size: 60px;}
+  p{ font-family: Inknut Antiqua; font-size: 15px; line-height: 20px;}
+
+  .text-container{ 
+    width: 80%;
+    left: 40px;
+    text-align: center;
+  }
+
+  .subtext-container{
+    width: 90%;
+    text-align: center;
+    position: fixed;
+    top: auto;
+    bottom: 0px;
+  }
+
+  .printingcontainer{
+    top: -5%;
+  }
+
+}
+
+
+
+
+
+
+
+
+/* PRINT */
+
+
+
+
+
+@media print{
+
+  body{
+    background-color: white;
+  }
+  
+
+  img{transform: scale(1.5);}
+
+  @page {
+    margin: 0mm;
+}
+  
+  .text-container{ opacity: 0;}
+
+  .subtext-container{ opacity: 0;}
+
+
+
+  .image1 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    transform: scale(.2); rotate: 7deg;
+  }
+  
+  .image2 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    transform: scale(.2);rotate: 20deg;
+  }
+  
+  .image3 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    transform: scale(.2);
+  }
+  
+  
+  .image4 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -5%;
+    left: -10%;
+    transform: scale(.2);
+    
+  }
+  
+  .image5 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 30%;
+    left: -8%;
+    transform: scale(.2); rotate: -7deg; 
+  }
+  
+  .image6 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    transform: scale(.2);rotate: 3deg;
+  }
+  
+  .image7 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(.3);
+  }
+  
+  .image8 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    transform: scale(.3);
+  }
+  
+  .image9 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: scale(.3);
+  }
+  
+  .image10 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 65%;
+    left: -10%;
+    transform: scale(.4); rotate: -10deg;
+  }
+  
+  .image11 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: scale(.2); rotate: -7deg;
+  }
+  
+  .image12 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 73%;
+    left: 55%;
+    transform: scale(.3);
+  }
+  
+  .image13 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -14%;
+    left: 45%;
+    transform: scale(.5);
+  }
+  
+  .image14 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: scale(.5); rotate: 7deg;
+  }
+  
+  .image15 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: scale(.3); rotate: -27deg;
+  }
+  
+  .image16 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 49%;
+    left: 15%;
+    transform: scale(.55); rotate: -27deg;
+  }
+  
+  .image17 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top:3%;
+    left: 15%;
+    transform: scale(.3); rotate: -27deg;
+  }
+  
+  .image18 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top:-5%;
+    left: 65%;
+    transform: scale(.3);
+  }
+
+  
+  :root {
+    cursor: none;
+    --cursorX: 50vw;
+    --cursorY: 50vh;
+  }
+  
+  
+   :root:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: fixed;
+    pointer-events: none;
+    background: radial-gradient(
+      circle 10vmax at var(--cursorX) var(--cursorY),
+      rgba(0,0,0,0) 0%,
+      rgba(0, 0, 0, 0) 55%,
+      rgba(0, 0, 0, 0) 80%
+  
+    )
+  }
+
+  .printingcontainer{ 
+    opacity: 0;
+  }
+
+  .printingcontainer2{ 
+    opacity: 0;
+  }
+
+  .printingcontainer3{ 
+    opacity: 0;
+  }
+
+  .printing-text{ 
+    opacity: 100%;
+    position: absolute;
+    top: 80%;
+    padding-left: 20px;
+
+  }
+  
+  .printing-subtext{
+      opacity: 100%;
+      position: absolute;
+      top: 90%;
+      right: 0px;
+      padding-right: 20px;
+ 
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
